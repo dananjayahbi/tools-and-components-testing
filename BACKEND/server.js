@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 //Setting up routing
 app.use("/user", require("./routes/User"));
 app.use("/uploadFiles", require("./routes/locallyFilesUpload"));
+app.use("/upZip", require("./routes/ZipExtractBE"));
 
 app.listen(PORT, () => {
   console.log("Server up with port : " + PORT);
