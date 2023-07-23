@@ -37,7 +37,6 @@ const drawerWidth = 240;
 // NAVIGATION
 const commonNav = [
   { name: "Dashboard", icon: <GridViewIcon />, path: "/" },
-  { name: "Locally file Upload", icon: <GridViewIcon />, path: "/uploadFiles" },
 ];
 
 const specialNav = [
