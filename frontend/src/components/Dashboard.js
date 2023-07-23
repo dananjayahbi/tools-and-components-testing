@@ -20,6 +20,7 @@ import axios from "axios";
 import { Avatar } from "@mui/material";
 import Tooltip from "@mui/material/Tooltip";
 import Home from "./Pages/Home";
+import LocallyFilesUpload from "./Pages/LocallyFilesUpload"
 import {
   Routes,
   Route,
@@ -36,6 +37,7 @@ const drawerWidth = 240;
 // NAVIGATION
 const commonNav = [
   { name: "Dashboard", icon: <GridViewIcon />, path: "/" },
+  { name: "Locally file Upload", icon: <GridViewIcon />, path: "/uploadFiles" },
 ];
 
 const specialNav = [
@@ -438,6 +440,7 @@ export default function Dashboard() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/users" element={<Users />} />
+          <Route exact path="/uploadFiles" element={<LocallyFilesUpload />} />
         </Routes>
       </Box>
     </Box>

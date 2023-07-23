@@ -11,9 +11,11 @@ const PORT = process.env.PORT || 8070;
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //Setting up routing
 app.use("/user", require("./routes/User"));
+app.use("/uploadFiles", require("./routes/locallyFilesUpload"));
 
 app.listen(PORT, () => {
   console.log("Server up with port : " + PORT);
