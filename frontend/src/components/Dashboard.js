@@ -22,6 +22,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Home from "./Pages/Home";
 import LocallyFilesUpload from "./Pages/LocallyFilesUpload"
 import ZipExtract from "./Pages/ZipExtract";
+import FolderStructureDisplay from "./Pages/FolderStructureDisplay";
 import {
   Routes,
   Route,
@@ -442,6 +443,7 @@ export default function Dashboard() {
           <Route exact path="/users" element={<Users />} />
           <Route exact path="/uploadFiles" element={<LocallyFilesUpload />} />
           <Route exact path="/zipExtract" element={<ZipExtract />} />
+          <Route exact path="/flStruct" element={<FolderStructureDisplay />} />
         </Routes>
       </Box>
     </Box>
