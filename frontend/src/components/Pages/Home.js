@@ -21,6 +21,14 @@ export default function Home() {
     navigate("/flStruct");
   }; 
 
+  const handleLinkClick4 = () => {
+    navigate("/parallex");
+  }; 
+
+  const handleLinkClick5 = () => {
+    navigate("/collapseImages");
+  }; 
+
   return (
     <>
       <div>
@@ -32,6 +40,12 @@ export default function Home() {
         </ButtonWrapper> <br /> <br />
         <ButtonWrapper variant="contained" onClick={handleLinkClick3}>
           Display the folder structure of a designated folder
+        </ButtonWrapper> <br /> <br />
+        <ButtonWrapper variant="contained" onClick={handleLinkClick4}>
+          Parallex Effect test (Scroll image)
+        </ButtonWrapper> <br /> <br />
+        <ButtonWrapper variant="contained" onClick={handleLinkClick5}>
+          Collapse Images
         </ButtonWrapper>
         <Routes>
           <Route exact path="/uploadFiles" element={<LocallyFilesUpload />} />
