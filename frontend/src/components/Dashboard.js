@@ -23,6 +23,8 @@ import Home from "./Pages/Home";
 import LocallyFilesUpload from "./Pages/LocallyFilesUpload"
 import ZipExtract from "./Pages/ZipExtract";
 import FolderStructureDisplay from "./Pages/FolderStructureDisplay";
+import Parallex from "./Pages/ParallexTest";
+import CollapseImages from "./Pages/CollapseImages";
 import {
   Routes,
   Route,
@@ -444,6 +446,8 @@ export default function Dashboard() {
           <Route exact path="/uploadFiles" element={<LocallyFilesUpload />} />
           <Route exact path="/zipExtract" element={<ZipExtract />} />
           <Route exact path="/flStruct" element={<FolderStructureDisplay />} />
+          <Route exact path="/parallex" element={<Parallex />} />
+          <Route exact path="/collapseImages" element={<CollapseImages />} />
         </Routes>
       </Box>
     </Box>
