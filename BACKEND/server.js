@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/user", require("./routes/User"));
 app.use("/uploadFiles", require("./routes/locallyFilesUpload"));
 app.use("/upZip", require("./routes/ZipExtractBE"));
+app.use("/flstruct", require("./routes/FolderStructureDisplayBE"));
 
 app.listen(PORT, () => {
   console.log("Server up with port : " + PORT);

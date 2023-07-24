@@ -67,6 +67,7 @@ export default function LocalUpload() {
     return (
       <>
         <div>
+        <div><h1>Locally Files Upload</h1></div>
           <DropzoneArea
             key={dropzoneKey} // Reset the DropzoneArea by changing the key
             onChange={handleDrop}
