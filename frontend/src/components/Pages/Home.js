@@ -29,6 +29,10 @@ export default function Home() {
     navigate("/collapseImages");
   }; 
 
+  const handleLinkClick6 = () => {
+    navigate("/cardBrowse");
+  }; 
+
   return (
     <>
       <div>
@@ -46,6 +50,9 @@ export default function Home() {
         </ButtonWrapper> <br /> <br />
         <ButtonWrapper variant="contained" onClick={handleLinkClick5}>
           Collapse Images
+        </ButtonWrapper> <br /> <br />
+        <ButtonWrapper variant="contained" onClick={handleLinkClick6}>
+          Cards Gallery slide
         </ButtonWrapper>
         <Routes>
           <Route exact path="/uploadFiles" element={<LocallyFilesUpload />} />
