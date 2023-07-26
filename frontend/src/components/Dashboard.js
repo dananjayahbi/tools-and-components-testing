@@ -299,7 +299,7 @@ export default function Dashboard() {
                 <img src={logoIcon} alt="Logo" className="logoIcon" />
               </ListItemIcon>
               <ListItemIcon
-                primary="Workspace"
+                primary="My Testings"
                 sx={{
                   height: "40px",
                   opacity: open ? 1 : 0,
