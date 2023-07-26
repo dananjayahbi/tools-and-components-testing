@@ -28,6 +28,8 @@ import CollapseImages from "./Pages/CollapseImages";
 import CardBrowse from "./Pages/CardBrowse";
 import DummyText from "./Pages/DummyText";
 import QRCodeGenerator from "./Pages/QRCodeGenerator";
+import ProductQR from "./Pages/ProductQR";
+import TextToQR from "./Pages/TextToQR";
 import {
   Routes,
   Route,
@@ -454,6 +456,8 @@ export default function Dashboard() {
           <Route exact path="/cardBrowse" element={<CardBrowse />} />
           <Route exact path="/dummyText" element={<DummyText />} />
           <Route exact path="/QRCodeGenerator" element={<QRCodeGenerator />} />
+          <Route exact path="/ProductQR" element={<ProductQR />} />
+          <Route exact path="/TextToQR" element={<TextToQR />} />
         </Routes>
       </Box>
     </Box>
