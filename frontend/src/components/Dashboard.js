@@ -26,6 +26,8 @@ import FolderStructureDisplay from "./Pages/FolderStructureDisplay";
 import Parallex from "./Pages/ParallexTest";
 import CollapseImages from "./Pages/CollapseImages";
 import CardBrowse from "./Pages/CardBrowse";
+import DummyText from "./Pages/DummyText";
+import QRCodeGenerator from "./Pages/QRCodeGenerator";
 import {
   Routes,
   Route,
@@ -450,6 +452,8 @@ export default function Dashboard() {
           <Route exact path="/parallex" element={<Parallex />} />
           <Route exact path="/collapseImages" element={<CollapseImages />} />
           <Route exact path="/cardBrowse" element={<CardBrowse />} />
+          <Route exact path="/dummyText" element={<DummyText />} />
+          <Route exact path="/QRCodeGenerator" element={<QRCodeGenerator />} />
         </Routes>
       </Box>
     </Box>

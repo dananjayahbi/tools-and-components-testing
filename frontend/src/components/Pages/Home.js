@@ -33,6 +33,14 @@ export default function Home() {
     navigate("/cardBrowse");
   }; 
 
+  const handleLinkClick7 = () => {
+    navigate("/dummyText");
+  };
+
+  const handleLinkClick8 = () => {
+    navigate("/QRCodeGenerator");
+  };
+
   return (
     <>
       <div>
@@ -53,6 +61,12 @@ export default function Home() {
         </ButtonWrapper> <br /> <br />
         <ButtonWrapper variant="contained" onClick={handleLinkClick6}>
           Cards Gallery slide
+        </ButtonWrapper> <br /> <br />
+        <ButtonWrapper variant="contained" onClick={handleLinkClick7}>
+          Dummy Text Generator
+        </ButtonWrapper> <br /> <br />
+        <ButtonWrapper variant="contained" onClick={handleLinkClick8}>
+          QR code generator
         </ButtonWrapper>
         <Routes>
           <Route exact path="/uploadFiles" element={<LocallyFilesUpload />} />

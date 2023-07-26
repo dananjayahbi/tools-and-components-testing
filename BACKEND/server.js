@@ -18,6 +18,8 @@ app.use("/user", require("./routes/User"));
 app.use("/uploadFiles", require("./routes/locallyFilesUpload"));
 app.use("/upZip", require("./routes/ZipExtractBE"));
 app.use("/flstruct", require("./routes/FolderStructureDisplayBE"));
+app.use("/DMT", require("./routes/DummyTextBE"));
+app.use("/QRCodeGenerator", require("./routes/QRCodeGeneratorBE"));
 
 app.listen(PORT, () => {
   console.log("Server up with port : " + PORT);
