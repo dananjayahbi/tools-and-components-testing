@@ -20,6 +20,8 @@ app.use("/upZip", require("./routes/ZipExtractBE"));
 app.use("/flstruct", require("./routes/FolderStructureDisplayBE"));
 app.use("/DMT", require("./routes/DummyTextBE"));
 app.use("/QRCodeGenerator", require("./routes/QRCodeGeneratorBE"));
+app.use("/ProductQR", require("./routes/ProductQRBE"));
+app.use("/TextToQR", require("./routes/TextToQRBE"));
 
 app.listen(PORT, () => {
   console.log("Server up with port : " + PORT);

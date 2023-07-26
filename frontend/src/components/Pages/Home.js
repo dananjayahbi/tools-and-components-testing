@@ -41,6 +41,14 @@ export default function Home() {
     navigate("/QRCodeGenerator");
   };
 
+  const handleLinkClick9 = () => {
+    navigate("/ProductQR");
+  };
+
+  const handleLinkClick10 = () => {
+    navigate("/TextToQR");
+  };
+
   return (
     <>
       <div>
@@ -67,6 +75,12 @@ export default function Home() {
         </ButtonWrapper> <br /> <br />
         <ButtonWrapper variant="contained" onClick={handleLinkClick8}>
           QR code generator
+        </ButtonWrapper> <br /> <br />
+        <ButtonWrapper variant="contained" onClick={handleLinkClick9}>
+          Product QR Code Generator
+        </ButtonWrapper> <br /> <br />
+        <ButtonWrapper variant="contained" onClick={handleLinkClick10}>
+          Text To QR Code Generator
         </ButtonWrapper>
         <Routes>
           <Route exact path="/uploadFiles" element={<LocallyFilesUpload />} />
