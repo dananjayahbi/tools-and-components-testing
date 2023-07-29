@@ -4,7 +4,9 @@ import ButtonWrapper from "../FormsUI/Button";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import LocallyFilesUpload from "./LocallyFilesUpload";
 import ZipExtract from "./ZipExtract";
-import FolderStructureDisplay from "./FolderStructureDisplay";
+import CKEditorComponent from "../OtherComponents/RichTextEditor";
+import { useState } from "react";
+
 
 export default function Home() {
   const navigate = useNavigate();
@@ -49,6 +51,12 @@ export default function Home() {
     navigate("/TextToQR");
   };
 
+  const [editorContent, setEditorContent] = useState('');
+
+  const handleContentChange = (data) => {
+    setEditorContent(data);
+  };
+
   return (
     <>
       <div>
@@ -82,6 +90,16 @@ export default function Home() {
         <ButtonWrapper variant="contained" onClick={handleLinkClick10}>
           Text To QR Code Generator
         </ButtonWrapper>
+
+        <CKEditorComponent 
+          initialContent={editorContent}
+          onContentChange={handleContentChange} 
+        />
+        <div className="output">
+          <h2>Output:</h2>
+          <div dangerouslySetInnerHTML={{ __html: editorContent }} />
+        </div>
+
         <Routes>
           <Route exact path="/uploadFiles" element={<LocallyFilesUpload />} />
           <Route exact path="/zipExtract" element={<ZipExtract />} />

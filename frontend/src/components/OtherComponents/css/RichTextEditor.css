@@ -1,0 +1,43 @@
+/* RichTextEditor.css */
+
+.rich-text-editor {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  .rich-text-editor-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .rich-text-editor-toolbar button {
+    font-size: 16px;
+    margin-right: 4px;
+    padding: 4px 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .rich-text-editor-toolbar button.active {
+    background-color: #ddd;
+  }
+  
+  .rich-text-editor-content {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 150px;
+    padding: 8px;
+    cursor: text;
+  }
+  
+  /* Style for links in the editor */
+  a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
